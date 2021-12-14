@@ -13979,11 +13979,12 @@ a.anchor-link {
 
 <span class="sd">Review of neuron action potential</span>
 
-<span class="sd">In neuron.py, I coded from scratch a HH simulation of neuron action potential. In this notebook, I </span>
-<span class="sd">use my code to explore some dynamical behavior of the HH model. First, I demonstrate basic spiking</span>
-<span class="sd">behavior given an injection current. Then, I demonstrate sub-threshold behavior given a very small</span>
-<span class="sd">injection current. Finally, I demonstrate repeated spiking and show how different injection currents</span>
-<span class="sd">restult in different spiking rates. Voltage timecourse and phase-plan plots are shown.</span>
+<span class="sd">In neuron.py, I coded from scratch a HH simulation of neuron action potential. In this notebook,</span>
+<span class="sd">I use my code to explore some dynamical behavior of the HH model. First, I demonstrate basic </span>
+<span class="sd">spiking behavior given an injection current. Then, I demonstrate sub-threshold behavior given a</span>
+<span class="sd">very small injection current. Finally, I demonstrate repeated spiking and show how different </span>
+<span class="sd">injection currents restult in different spiking rates. Voltage timecourse and phase-plan plots</span>
+<span class="sd">are shown.</span>
 
 <span class="sd">code available: https://github.com/eshanking/hh_neuron</span>
 <span class="sd">&quot;&quot;&quot;</span>
@@ -14128,7 +14129,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># repeated spiking</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># slow repeated spiking</span>
 <span class="n">inj</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="mi">10</span><span class="o">**</span><span class="mi">5</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="o">*</span><span class="mi">10</span><span class="o">**</span><span class="mi">4</span><span class="p">):</span>
     <span class="n">inj</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">5000</span><span class="p">]</span> <span class="o">=</span> <span class="mi">8</span>
@@ -14174,7 +14175,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># repeated spiking</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># fast repeated spiking</span>
 <span class="n">inj</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="mi">10</span><span class="o">**</span><span class="mi">5</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="o">*</span><span class="mi">10</span><span class="o">**</span><span class="mi">4</span><span class="p">):</span>
     <span class="n">inj</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">5000</span><span class="p">]</span> <span class="o">=</span> <span class="mi">50</span>
